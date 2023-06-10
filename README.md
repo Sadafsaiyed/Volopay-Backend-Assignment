@@ -74,5 +74,40 @@ Similarly, you can use the API for the second use case by setting the "item_by" 
 
 By utilizing this API, you can programmatically retrieve the nth most sold item based on quantity sold or total price, allowing you to analyze sales data and gain insights into popular products during specific periods.
 
+ ## API 3:
+ 
+ - Endpoint: /api/percentage_of_department_wise_sold_items
+ - API Use Case:
+ * What is the percentage of sold items (seats) department-wis
+ 
+ -Expected Output: 
+ The API should return a JSON object with department names as keys and their corresponding percentages as values.
+ 
+ -Parameters:
+ start_date: A DATE parameter specifying the start date of the period for which you want to retrieve the data.
+ end_date: A DATE parameter specifying the end date of the period for which you want to retrieve the data.
+ 
+ -Let's explain the API in detail:
+
+The API endpoint "/api/percentage_of_department_wise_sold_items" is designed to calculate the percentage of sold items, specifically seats, department-wise within a specific period.
+
+In the given use case, the API will calculate the percentage of seats sold for each department based on the provided start and end dates. This allows you to understand the distribution of sales across different departments and determine the relative popularity of each department's products.
+
+To use the API, you need to provide the following parameters:
+
+start_date: This parameter specifies the start date of the period you want to analyze. You need to provide a specific date in the format YYYY-MM-DD.
+end_date: This parameter specifies the end date of the period you want to analyze. Similarly, you need to provide a specific date in the format YYYY-MM-DD.
+To make a request to the API, you would construct an HTTP request to the endpoint along with the required parameters.
+The request is asking for the percentage of sold items (seats) department-wise within the year 2023, from January 1st to December 31st.
+The API would process the request, retrieve the relevant data from the database or system, and calculate the percentage of seats sold for each department during the specified period.
+The API response would be a JSON object with department names as keys and their corresponding percentages as values.
+The API calculates the percentages based on the total number of sold seats for each department and provides you with a department-wise breakdown of the sales distribution.
+
+By utilizing this API, you can programmatically retrieve the percentage of sold items department-wise, allowing you to analyze sales data and gain insights into the performance of different departments.
+ 
+
+
+
+
 
 
