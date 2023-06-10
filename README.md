@@ -52,7 +52,7 @@ You would create an HTTP request to the API endpoint with the required parameter
   end_date: A DATE parameter specifying the end date of the period for which you want to retrieve the data.
   n: An integer parameter indicating the nth rank you are interested in. For example, if n=2, you want the 2nd most sold item.
   
-  Let's explain the API in detail:
+  - Let's explain the API in detail:
 
 The API endpoint "/api/nth_most_total_item" represents the functionality to retrieve the nth most sold item based on either the quantity sold or the total price within a specific period.
 
@@ -80,14 +80,14 @@ By utilizing this API, you can programmatically retrieve the nth most sold item 
  - API Use Case:
  * What is the percentage of sold items (seats) department-wis
  
- -Expected Output: 
+ - Expected Output: 
  The API should return a JSON object with department names as keys and their corresponding percentages as values.
  
- -Parameters:
+ - Parameters:
  start_date: A DATE parameter specifying the start date of the period for which you want to retrieve the data.
  end_date: A DATE parameter specifying the end date of the period for which you want to retrieve the data.
  
- -Let's explain the API in detail:
+ - Let's explain the API in detail:
 
 The API endpoint "/api/percentage_of_department_wise_sold_items" is designed to calculate the percentage of sold items, specifically seats, department-wise within a specific period.
 
