@@ -36,7 +36,8 @@ You would create an HTTP request to the API endpoint with the required parameter
 - API Response:
  The API would take your request, process it, and then get the pertinent information from the database or underlying system. The total number of seats sold during the designated time period and department would be calculated. The result in the format you specified—in this case, an integer designating the total number of sold seats—would be included in the API response. 
  
- #### WORKING:
+ ### WORKING:
+ 
  
  ## API 2:
 
