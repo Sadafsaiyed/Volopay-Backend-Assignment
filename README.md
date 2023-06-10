@@ -25,6 +25,7 @@ STEPS TO ACCESS THE PROJECT:
 6. Then you have to route through each url of every API.
 
 ## API 1: 
+http://localhost:3000/api/total_items?startdate=2023-01-27&enddate=2023-06-03&department=Marketting
 
 - API Endpoint: /api/total_items
 The URL path used to access the API is known as the endpoint. The endpoint in this instance is "/api/total_items". It stands for the particular feature or resource you want to use.
@@ -53,6 +54,7 @@ You would create an HTTP request to the API endpoint with the required parameter
  
  
  ## API 2:
+ http://localhost:3000/api/nth_most_total_item?startdate=2023-01-27&enddate=2023-06-03&item_by=quantity
 
  - Endpoint: /api/nth_most_total_item
  -API Use Cases:
@@ -91,6 +93,7 @@ Similarly, you can use the API for the second use case by setting the "item_by" 
 By utilizing this API, you can programmatically retrieve the nth most sold item based on quantity sold or total price, allowing you to analyze sales data and gain insights into popular products during specific periods.
 
  ## API 3:
+ http://localhost:3000/api/percentage_of_department_wise_sold_items
  
  - Endpoint: /api/percentage_of_department_wise_sold_items
  - API Use Case:
@@ -122,6 +125,7 @@ The API calculates the percentages based on the total number of sold seats for e
 By utilizing this API, you can programmatically retrieve the percentage of sold items department-wise, allowing you to analyze sales data and gain insights into the performance of different departments.
 
  ## API 4:
+ http://localhost:3000/api/monthly_sales?product=Apple&year=2023
  
  - Endpoint: /api/monthly_sales
  - API Use Case:
