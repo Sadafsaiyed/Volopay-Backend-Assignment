@@ -27,6 +27,7 @@ The outcome you anticipate getting from the API is known as the expected output.
 The inputs or arguments you give the API in order to customise your request and obtain the necessary data are known as parameters. There are three parameters in this use case:
 start_date: A DATE parameter that specifies the beginning of the time period for which you're requesting data. In order to indicate the beginning of the third quarter, you would use a specific date in the format YYYY-MM-DD, such as "2023-07-01".
 end_date: A DATE parameter that specifies the final day of the time frame for which you're requesting data. 
+### WORKING:
 In a similar manner, you would enter a specific date in the form YYYY-MM-DD, such as "2023-09-30", to indicate the conclusion of the third quarter.
 department: the department from which the data should be retrieved, specified as a string parameter. To explicitly retrieve data from the Marketing division in this situation, it should be set to "Marketing".
 
@@ -35,8 +36,6 @@ You would create an HTTP request to the API endpoint with the required parameter
 
 - API Response:
  The API would take your request, process it, and then get the pertinent information from the database or underlying system. The total number of seats sold during the designated time period and department would be calculated. The result in the format you specified—in this case, an integer designating the total number of sold seats—would be included in the API response. 
- 
- ### WORKING:
  
  
  ## API 2:
@@ -55,7 +54,7 @@ You would create an HTTP request to the API endpoint with the required parameter
   end_date: A DATE parameter specifying the end date of the period for which you want to retrieve the data.
   n: An integer parameter indicating the nth rank you are interested in. For example, if n=2, you want the 2nd most sold item.
   
-  - Let's explain the API in detail:
+ ### WORKING:
 
 The API endpoint "/api/nth_most_total_item" represents the functionality to retrieve the nth most sold item based on either the quantity sold or the total price within a specific period.
 
@@ -90,7 +89,7 @@ By utilizing this API, you can programmatically retrieve the nth most sold item 
  start_date: A DATE parameter specifying the start date of the period for which you want to retrieve the data.
  end_date: A DATE parameter specifying the end date of the period for which you want to retrieve the data.
  
- - Let's explain the API in detail:
+ ### WORKING:
 
 The API endpoint "/api/percentage_of_department_wise_sold_items" is designed to calculate the percentage of sold items, specifically seats, department-wise within a specific period.
 
@@ -121,7 +120,7 @@ By utilizing this API, you can programmatically retrieve the percentage of sold 
   product: A string parameter specifying the name of the product you want to analyze the sales for.
   year: A number parameter indicating the year for which you want to retrieve the monthly sales data.
   
-  - Let's explain the API in detail:
+  ### WORKING: 
 
 The API endpoint "/api/monthly_sales" is designed to provide the monthly sales data for a specific product. It allows you to understand how the sales of a particular product fluctuate throughout the year.
 
