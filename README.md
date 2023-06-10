@@ -104,6 +104,36 @@ The API response would be a JSON object with department names as keys and their 
 The API calculates the percentages based on the total number of sold seats for each department and provides you with a department-wise breakdown of the sales distribution.
 
 By utilizing this API, you can programmatically retrieve the percentage of sold items department-wise, allowing you to analyze sales data and gain insights into the performance of different departments.
+
+ ## API 4:
+ 
+ - Endpoint: /api/monthly_sales
+ - API Use Case:
+ * How does the monthly sales for any product look like
+ 
+ - Expected Output: 
+  The API should return an array of monthly sales values for a specific product and year.
+  
+  - Parameters:
+  product: A string parameter specifying the name of the product you want to analyze the sales for.
+  year: A number parameter indicating the year for which you want to retrieve the monthly sales data.
+  
+  - Let's explain the API in detail:
+
+The API endpoint "/api/monthly_sales" is designed to provide the monthly sales data for a specific product. It allows you to understand how the sales of a particular product fluctuate throughout the year.
+
+In the given use case, you need to provide two parameters:
+
+product: This parameter specifies the name of the product you want to analyze. You should provide a string value representing the product name.
+year: This parameter indicates the year for which you want to retrieve the monthly sales data. You should provide a number value representing the desired year.
+To use the API, you would make a request to the endpoint along with the required parameters. For example:
+
+GET /api/monthly_sales?product=ProductXYZ&year=2023
+This request is asking for the monthly sales data for "ProductXYZ" for the year 2023.
+The API would process the request, retrieve the relevant sales data for the specified product and year from the database or system, and calculate the sales values for each month.
+The API provides you with a month-by-month breakdown of the sales for the specified product and year, allowing you to analyze the sales trends and identify any seasonal patterns or fluctuations.
+
+By utilizing this API, you can programmatically retrieve the monthly sales data for a specific product, enabling you to visualize and analyze the sales performance over time.
  
 
 
