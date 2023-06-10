@@ -120,22 +120,8 @@ By utilizing this API, you can programmatically retrieve the percentage of sold 
   product: A string parameter specifying the name of the product you want to analyze the sales for.
   year: A number parameter indicating the year for which you want to retrieve the monthly sales data.
   
-  ### WORKING: 
+  Due to less time I am not able to complete the last api, really sorry for the inconvinience caused.
 
-The API endpoint "/api/monthly_sales" is designed to provide the monthly sales data for a specific product. It allows you to understand how the sales of a particular product fluctuate throughout the year.
-
-In the given use case, you need to provide two parameters:
-
-product: This parameter specifies the name of the product you want to analyze. You should provide a string value representing the product name.
-year: This parameter indicates the year for which you want to retrieve the monthly sales data. You should provide a number value representing the desired year.
-To use the API, you would make a request to the endpoint along with the required parameters. For example:
-
-GET /api/monthly_sales?product=ProductXYZ&year=2023
-This request is asking for the monthly sales data for "ProductXYZ" for the year 2023.
-The API would process the request, retrieve the relevant sales data for the specified product and year from the database or system, and calculate the sales values for each month.
-The API provides you with a month-by-month breakdown of the sales for the specified product and year, allowing you to analyze the sales trends and identify any seasonal patterns or fluctuations.
-
-By utilizing this API, you can programmatically retrieve the monthly sales data for a specific product, enabling you to visualize and analyze the sales performance over time.
  
 
 
