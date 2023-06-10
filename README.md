@@ -10,6 +10,20 @@ In summary, an API is a tool that allows software applications to communicate an
 * The programming language and framework that best suites the assignment requirements are javascript and Nextjs, so I have worked on the same.
 * For accessing the data for my APIs, I have converted the csv file of the given data set into the Json file.
 
+STEPS TO ACCESS THE PROJECT:
+
+1. The first and foremost step is to downlod the zip file from the code button in the same repository.
+
+2. Now to run this project, you have to run the command npm install.
+
+3. Run the command npm run dev, from which the project will start into development mode.
+
+4. Then, further our project will build to run in the development mode for production usage using the command yarn run build.
+
+5. Further, using the command yarn run start, our project will get started at the server.
+
+6. Then you have to route through each url of every API.
+
 ## API 1: 
 
 - API Endpoint: /api/total_items
