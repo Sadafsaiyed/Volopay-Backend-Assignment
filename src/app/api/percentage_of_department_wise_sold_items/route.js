@@ -7,6 +7,7 @@ export const GET = async (req) => {
     const enddate = searchParams.get("enddate");
     const item_by = searchParams.get("item_by");
 
+  
 
 
     let items = {
@@ -21,6 +22,9 @@ export const GET = async (req) => {
     return new Response(JSON.stringify({
         'Marketting': (items['Marketting']/30074)*100, 'Tech': (items['Tech']/30074)*100, 'Customer Success': (items['Customer Success']/30074)*100, 'Sales': (items['Sales']/30074)*100, 'HR': (items['HR']/30074)*100
     }) ,{ status: 200 })
+
+
+
 
 
 
