@@ -27,8 +27,9 @@ export const GET = async (req) => {
                 }
             }
         })
-        console.log(Object.values(items).sort()[Object.values(items).length-2]);
-        const sadaf = Object.values(items).sort()[Object.values(items).length-2];
+        const sadaf = Object.values(items).sort(function(a, b){return a - b})[Object.values(items).length-2];
+        
+        
         
         return new Response(Object.keys(items).find(key => items[key] === sadaf), { status: 200 })
     }
@@ -52,8 +53,7 @@ export const GET = async (req) => {
             }
         })
 
-        console.log(items);
-        const sadaf = Object.values(items).sort()[Object.values(items).length-4];
+        const sadaf = Object.values(items).sort( function(a, b){return a - b})[Object.values(items).length-4];
         
         return new Response(Object.keys(items).find(key => items[key] === sadaf), { status: 200 })
 
